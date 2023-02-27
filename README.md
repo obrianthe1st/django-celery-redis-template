@@ -43,6 +43,9 @@ This directory contains all the apps for our projects. If you check the base set
 
 ## Nginx as reverse proxy
 
+![django drawio](https://user-images.githubusercontent.com/88407652/221683815-88632588-e0b4-443c-bf1a-cf105393ff6c.png)
+
+
 I use nginx as a reverse proxy for our application. Instead of sending the request directly to the python backend, it will instead go to the proxy address,`localhost:8080`, nginx will do its magic and send the request to the default django server `localhost:8000`.
 
 To access a url in django you would have to now use the nginx address along with the rest of the url.
