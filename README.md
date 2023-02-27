@@ -37,6 +37,10 @@ Inside this directory you will find three different settings.py file:
 3. production.py
    The production.py file will contain the production settings for the project for your production environment.
 
+### core_apps/
+
+This directory contains all the apps for our projects. If you check the base settings file you will see that the settings for the apps layout is a bit different.
+
 ## Nginx as reverse proxy
 
 I use nginx as a reverse proxy for our application. Instead of sending the request directly to the python backend, it will instead go to the proxy address,`localhost:8080`, nginx will do its magic and send the request to the default django server `localhost:8000`.
@@ -47,11 +51,11 @@ To be able to make changes to nginx you can do easily inside the directory path:
 
 I decided to change the admin path to `localhost:8080/secretadmin`. It is for security purposes you can easily change it in base settings with `ADMIN_URL=`. An example is provided in the settings file anyway.
 
-## .envs/.local/
+### .envs/.local/
 
 Inside this folder you will store the environment variables inside the various different files provided. You can create your own files as well and add your own touch to it.
 
-## docker/
+### docker/
 
 All the docker files are now in one place. If you dig into the local folder you will notice there are various settings for django, celery, nginx and postgres.
 
