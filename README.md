@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Django-Celery-Redis-Template v2.0
 
 ## Overview
@@ -60,3 +61,6 @@ Inside this folder you will store the environment variables inside the various d
 All the docker files are now in one place. If you dig into the local folder you will notice there are various settings for django, celery, nginx and postgres.
 
 I got bash scripts setup inside to handle some of the automation parts of it. You can dig into that as well.
+=======
+A django, redis and celery configuration for developers.
+>>>>>>> 7f2590dfac95dba5305a83cfacfc19257b28d1a8

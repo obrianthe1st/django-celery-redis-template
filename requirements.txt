@@ -1,0 +1,9 @@
+Django
+celery
+redis
+psycopg2
+django-celery-beat
+django-celery-results
+flower
+black
+flake
